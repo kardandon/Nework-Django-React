@@ -1,0 +1,16 @@
+{% extends "network/layout.html" %}
+{% load static %}
+{% block body %}
+<div >
+    <img src="{{url}}" id="profilepic" onerror="this.src='https://merriam-webster.com/assets/mw/images/article/art-wap-landing-mp-lg/egg-3442-4c317615ec1fd800728672f2c168aca5@1x.jpg';"/>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="url" name="url" class="form-control" style="width: 40%;display:flex;margin-bottom: 20px;" placeholder="Picture Url">
+        <input type="submit" class="btn btn-primary" value="Change picture">
+    </form>
+</div>
+{% endblock %}
+
+{% block script %}
+{% endblock %}
+

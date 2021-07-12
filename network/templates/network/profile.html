@@ -1,0 +1,39 @@
+
+{% extends "network/layout.html" %}
+{% load static %}
+{% block body %}
+    <div id="profile">
+    <img src="" onerror="this.src='https://merriam-webster.com/assets/mw/images/article/art-wap-landing-mp-lg/egg-3442-4c317615ec1fd800728672f2c168aca5@1x.jpg';" id="profilepic">
+    <h4 id="username"></h4>
+    <a href="#" class="followitem" id="changepic"></a>
+    <div id="followblock">
+        <a href="#" id="follows" class="followitem"></a> <a href="#" id="followers" class="followitem"></a>
+    <a class="followitem" href="#" id="followtext"></a>
+    </div>
+    </div>
+    <div id="follow_list"></div>
+    <div class="postlist" id="postlist">
+    {% for post in posts %}
+    <div class="post">
+        <div class="userinfo">
+        <img class="minipic" src="{{post.profilepic}}" onerror="this.src='https://merriam-webster.com/assets/mw/images/article/art-wap-landing-mp-lg/egg-3442-4c317615ec1fd800728672f2c168aca5@1x.jpg';"></img>
+        <p class="username">{{post.username}}</p>
+        </div>
+        <div class="post-inner">
+        <div class="post-header">
+            <p class="timestamp">{{post.timestamp}}</p>
+            <p class="like"> Like: {{post.likes}}</p>
+        </div>
+        <div style="width: 100%"}>
+            <p class="text">{{post.text}}</p>
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <p> No Posts Found </p>
+    {% endfor %}
+    </div>
+{% endblock %}
+{% block script %}
+<script src="{% static 'network/profile.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,148 @@
+#profilepic{
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+}
+
+#followblock{
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+.followitem{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+#followblock a:hover{
+    text-decoration: none;
+    color: blue;
+}
+#profile{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.minipic{
+    width: 48px;
+    height: 48px;
+}
+.username{
+    margin-left: 48px;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.userlist-element{
+    margin-top: 20px;
+    height: 100px;
+    width: 60%;
+    padding: 24px;
+    display: inline-flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-color: black;
+    border-style: inset;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#follow_list{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.userlist{
+    width: 100%;
+}
+
+.postlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.post{
+    margin-top: 20px;
+    height: 100px;
+    width: 60%;
+    padding: 24px;
+    display: inline-flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-color: black;
+    border-style: inset;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.post .username{
+    max-width: 20%;
+}
+.post .context{
+    max-width: 80%;
+}
+
+.post-buttons{
+    display: inline-flex;
+    outline: none;
+    justify-content: center;
+    border: none;
+    background-color: inherit;
+}
+.post-header{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    font-size: 10px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    height: 20%;
+    width: 100%;
+}
+.post-inner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.like{
+    padding-left: 20px;
+}
+.like:hover{
+    cursor: pointer;
+}
+.userinfo{
+    display: inherit;
+}
+.userinfo:hover{
+    cursor: pointer;
+}
+
+.newpost-input{
+    outline: none;
+    border: none;
+    display: inline-flex;
+    justify-content: left;
+    width: 80%;
+    height: 100%;
+}
+.newpost-submit{
+    display: inline-flex;
+    outline: none;
+    justify-content: right;
+    border: none;
+    width: 20%;
+    background-color: inherit;
+}
